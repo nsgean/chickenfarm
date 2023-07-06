@@ -137,8 +137,8 @@ const formatDates = (type) => {
             break
     }
 
-    const actualDate = moment("18/06/2023 14:27", "DD/MM/YYYY HH:mm").valueOf()
-    const startDate = moment("18/06/2023 14:27", "DD/MM/YYYY HH:mm").subtract(typeDate, diffDate).valueOf()
+    const actualDate = moment().valueOf()
+    const startDate = moment().subtract(typeDate, diffDate).valueOf()
 
     return { startDate, actualDate }
 }
